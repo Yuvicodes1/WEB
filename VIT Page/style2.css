@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 4px 2px 2px 4px rgba(54, 54, 54, 0.1);
+    border-radius: 5px;
+}
+.box h3 {
+    margin-top: 0;
+    color: #333;
+}
+.box ul {
+    padding: 0;
+    list-style: none;
+}
+.box ul li {
+    margin: 10px 0;
+}
+.box a {
+    color: #007bff;
+    text-decoration: none;
+}
+.box a:hover {
+    text-decoration: underline;
+}
+.admission-enquiry {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: #ffcc00;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.top-bar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    border: 0.1em solid #001f3f;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: #001f3f;
+}
+
+select{
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #001f3f;
+    border: none;
+    color: #ddd;
+}
