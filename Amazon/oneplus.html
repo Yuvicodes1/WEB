@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon: ONE OnePlus-12</title>
+    <style>
+        body {
+    margin: 0;
+    padding-left: 1px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #131921;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 2.5em; 
+}
+
+header img {
+    width: auto;
+    height: 3em;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+#loc {
+    background: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    font-weight: 550;
+    padding: 0.75em;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    border: 0.1em solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#Search {
+    width: 3.5vw;
+    border: none;
+    outline: none;
+    padding: 0.6vh;
+    background-color: #f3f3f3;
+    color: rgb(110,110,116);
+    height: 40px ;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.74vw;
+}
+
+.search-text {
+    flex:1;
+    padding: 10px;
+    width: 10.41vw;
+    border: none;
+    outline: none;
+    font-size: 0.8vw;
+}
+
+.search-button {
+    background-color: #f3a847;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.74vw;
+}
+
+.search-button:hover {
+    background-color: #d08937;
+}
+
+#Accounts{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color:#131921;
+    color:white;
+    height: 2vw;
+    border-radius: 4px;
+    font-size: 0.74vw;
+}
+
+#Country
+{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color:#131921;
+    color:white;
+    height: 2vw;
+    border-radius: 4px;
+    font-size: 0.74vw;
+    margin: 0;
+}
+
+#cart{
+    margin: 10px 10px 10px 20px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: 550;
+    padding: 15px;
+}
+
+.navbar{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #314c6e;
+    color: white;
+}
+
+.navbar li{
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar a{
+    font-size: small;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar #PRIME{
+    background-color: #314c6e;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.secondary_bar{
+    display: flex;
+}
+.secondary_bar li{
+    display: inline;
+    padding: 0px 5px 0px 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary_bar li:hover{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 3px;
+}
+
+h1{
+    font-family: 'Work Sans';
+    margin-left: 1vw;
+}
+
+
+.siedebar {
+    float: left;
+    width: 10vw;
+    height: 100vh;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    margin:10px;
+}
+
+.siedebar p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.siedebar a{
+    padding: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #131921;
+    font-size: 16px;
+}
+.siedebar a:hover{
+    text-decoration: underline;
+    text-decoration-color: blue ;
+}
+
+.prod img{
+    width: 25%;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+}
+
+    </style>
+<body>
+    <header>
+        <a naem="top"></a>
+        <div style="display: flex; align-items: center;">
+            <img src="logo.png" alt="Amazon">
+            <button id="loc">Delivering to Vellore 632007<br><b>Update Location</b></button>
+        </div>
+        <span>
+            <div class="search-bar">
+                <select id="Search">
+                    <option value="All">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="clothes">Fashion</option>
+                    <option value="Home">Home and Appliances</option>
+                    <option value="Today's Deal">Today's Deal</option>
+                    <option value="Best Seller">Best Sellers</option>
+                </select>
+                <input type="text" class="search-text" placeholder="Search Amazon.in">
+                <button class="search-button">&#128269;</button>
+            </div>
+        </span>
+        <div>
+            <select name="Country" id="Country">
+                <option value="India">IN, EN</option>
+                <option value="Hindi">IN , HINDI</option>
+                <option value="China">CH, CHI</option>
+                <option value="USA">USA, EN</option>
+            </select>
+        </div>
+        <div>
+            <select name="Users" id="Accounts">
+                <option value="Accounts and List">Hello, Sign In</option>
+                <option value="Your Orders">Your Orders</option>
+                <option value="Out/In">Log Out</option>
+            </select>
+            <button id="cart" style="background-color: #131921;">
+                CART &#x1F6D2
+            </button>
+        </div>
+    </header>
+    <main>
+        <ul class="navbar">
+            <li style="font-weight: 550; font-size: small;">&#9783; ALL</li>
+            <li><a href="">Electronics</a></li>
+            <li><a href="">Fashion</a></li>
+            <li><a href="">Best Seller's</a></li>
+            <li><a href="">Mobiles</a></li>
+            <li><a href="">Today's Deals</a></li>
+            <li><a href="">Customer Service</a></li>
+            <li>
+                <select name="PRIME" id="PRIME" style="font-weight: 550; font-size: small;">
+                    <option value="Prime">Prime</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Movies">Movies</option>
+                </select>
+            </li>
+        </ul>
+
+        <ul class="secondary_bar">
+            <li>
+                Best Seller
+            </li>
+            <li>
+                Hot New Releases
+            </li>
+        </ul>
+        <hr>
+        <h1>Amazon Bestsellers</h1>
+        <div class="siedebar">
+            <p>Any Department</p><br>
+            <a href="">Amazon LaunchPad</a><br>
+            <a href="">Amazon Renewed</a><br>
+            <a href="">Apps for Android</a><br>
+            <a href="">Bags, Wallets and Luggage</a><br>
+            <a href="">Books</a><br>
+            <a href="">Beauty</a><br>
+            <a href="#Electronics">Electronics</a><br>
+            <a href="">Mobiles</a>
+        </div>
+        <div class="product-page">
+            <div class="prod" style="text-align: center;">
+                <h2>OnePlus-12 12GB RAM , 128 GB STORAGE With Snapdragon Gen 1 and Tons of OnePlus Goodness</h2>
+                <img src="oneplus.png" alt="">
+                <p>Product images</p>
+            </div>
+            <p>PRICE: XXXXXX</p>
+            <p>Description: With an ultra-flagship CPU and up to 16GB of LPDDR5X RAM, power your way to the pinnacle of performance. <br>Meet the all-new, record-breaking 2K 120 Hz ProXDR Display with advanced LTPO for brighter, more vibrant visuals. With Aqua Touch technology, swipes flow as smoothly as water on the display.</p>
+        </div>
+    </main>
+</body>
+</html>
